@@ -68,6 +68,35 @@
       color: #FF9F43;
     }
 
+    /* CONTACT FORM */
+    .contact-form {
+      max-width: 500px;
+      margin: 40px auto 0;
+      text-align: left;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border-radius: 6px;
+      border: none;
+      font-size: 15px;
+    }
+
+    .contact-form button {
+      width: 100%;
+      background: #FF9F43;
+      color: #0B1F3A;
+      border: none;
+      padding: 14px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
     footer {
       text-align: center;
       padding: 40px 20px;
@@ -142,21 +171,41 @@
         <h3>Future Opportunities</h3>
         <p>
           We are always open to connecting with motivated analysts,
-          Power BI developers, and data professionals who enjoy
-          turning data into meaningful insights.
+          Power BI developers, and data professionals.
         </p>
       </div>
 
       <div class="card">
         <h3>Get in Touch</h3>
         <p>
-          If you’re interested in working with us in the future,
-          feel free to share your profile at:
-          <br><br>
+          Share your profile or interest at:<br><br>
           <strong>reijonix.analytics@gmail.com</strong>
         </p>
       </div>
     </div>
+  </div>
+
+  <!-- CONTACT -->
+  <div class="section">
+    <h2>Contact Us</h2>
+    <p>
+      Have a project or need help with analytics?
+      Send us a message and we’ll get back to you.
+    </p>
+
+    <form 
+      class="contact-form"
+      action="https://formsubmit.co/reijonix.analytics@gmail.com"
+      method="POST"
+    >
+      <input type="hidden" name="_captcha" value="false">
+
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
   </div>
 
   <!-- FOOTER -->
